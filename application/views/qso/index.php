@@ -204,6 +204,23 @@
                 </div>
               </div>
 
+              <div class="mb-3 row">
+                  <label for="locator" class="col-sm-3 col-form-label"><?php echo lang('gen_hamradio_gridsquare'); ?></label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control form-control-sm" name="locator" id="locator" value="">
+                    <small id="locator_info" class="form-text text-muted"></small>
+                </div>
+              </div>
+
+
+
+            <div class="mb-3 row">
+              <label for="operator_callsign" class="col-sm-6 col-form-label"><?php echo lang('qso_operator_callsign'); ?></label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="operator_callsign" name="operator_callsign" value="<?php if ($this->session->userdata('operator_callsign')) { echo $this->session->userdata('operator_callsign'); } ?>" />
+              </div>
+            </div>
+
           </div>
 
           <!-- Station Panel Data -->
@@ -265,10 +282,6 @@
               <small id="powerHelp" class="form-text text-muted"><?php echo lang('qso_transmit_power_helptext'); ?></small>
             </div>
 
-            <div class="mb-3">
-              <label for="operator_callsign"><?php echo lang('qso_operator_callsign'); ?></label>
-              <input type="text" class="form-control" id="operator_callsign" name="operator_callsign" value="<?php if ($this->session->userdata('operator_callsign')) { echo $this->session->userdata('operator_callsign'); } ?>" />
-            </div>
 
         </div>
 
