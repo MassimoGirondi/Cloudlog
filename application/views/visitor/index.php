@@ -75,6 +75,7 @@ function echoQrbCalcLink($mygrid, $grid, $vucc) {
 					echo_table_header_col($this, $this->session->userdata('user_column2')==""?'RSTS':$this->session->userdata('user_column2'));
 					echo_table_header_col($this, $this->session->userdata('user_column3')==""?'RSTR':$this->session->userdata('user_column3'));
 					echo_table_header_col($this, $this->session->userdata('user_column4')==""?'Band':$this->session->userdata('user_column4'));
+					echo_table_header_col($this, $this->session->userdata('user_column5')==""?'Operator':$this->session->userdata('operator'));
 				?>
 				</tr>
 			</thead>
@@ -116,6 +117,7 @@ function echoQrbCalcLink($mygrid, $grid, $vucc) {
 						echo_table_col($row, $this->session->userdata('user_column2')==""?'RSTS':$this->session->userdata('user_column2'));
 						echo_table_col($row, $this->session->userdata('user_column3')==""?'RSTR':$this->session->userdata('user_column3'));
 						echo_table_col($row, $this->session->userdata('user_column4')==""?'Band':$this->session->userdata('user_column4'));
+						echo_table_col($row, $this->session->userdata('user_column5')==""?'Operator':$this->session->userdata('user_column5'));
 					?>
 				</tr>
 			<?php $i++; } } ?>
