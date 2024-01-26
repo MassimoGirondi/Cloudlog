@@ -51,6 +51,16 @@
 				</tr>
 			<?php $i++; } ?>
 		</table>
+
+<script>
+  // If a refresh parameter is passed, reload the page automatically.
+  // This could be used e.g. for a live streaming page                              
+  var query = window.location.search;
+  var urlParams = new URLSearchParams(query);
+  if (urlParams.get("refresh"))
+    setTimeout(function () { location.reload(1); }, urlParams.get("refresh") * 1000);
+</script>
 </body>
+
 
 </html>
