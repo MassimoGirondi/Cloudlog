@@ -239,7 +239,14 @@
                   <div class="col-sm-9">
                     <input type="text" class="form-control form-control-sm" name="comment" id="comment" value="">
                   </div>
+                </div> 
+                <div class="mb-3">
+                  <label for="operator_callsign"><?php echo lang('qso_operator_callsign'); ?></label>
+                  <input type="text" class="form-control" id="operator_callsign" name="operator_callsign" value="<?php if ($this->session->userdata('operator_callsign')) {
+                                                                                                                    echo $this->session->userdata('operator_callsign');
+                                                                                                                  } ?>" />
                 </div>
+
 
               </div>
 
@@ -313,12 +320,6 @@
                   <small id="powerHelp" class="form-text text-muted"><?php echo lang('qso_transmit_power_helptext'); ?></small>
                 </div>
 
-                <div class="mb-3">
-                  <label for="operator_callsign"><?php echo lang('qso_operator_callsign'); ?></label>
-                  <input type="text" class="form-control" id="operator_callsign" name="operator_callsign" value="<?php if ($this->session->userdata('operator_callsign')) {
-                                                                                                                    echo $this->session->userdata('operator_callsign');
-                                                                                                                  } ?>" />
-                </div>
 
               </div>
 
